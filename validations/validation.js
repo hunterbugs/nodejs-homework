@@ -15,7 +15,7 @@ const favoriteValidation = Joi.object({
 // validation for signup
 const signupValidation = Joi.object({
   email: Joi.string()
-    .email({ minDomainSegments: 2, tlds: { allow: ["com", "net"] } })
+    .email({ minDomainSegments: 2, tlds: { allow: ["com", "net", "ph"] } })
     .required()
     .messages({
       "any.required": "Missing required email field",
